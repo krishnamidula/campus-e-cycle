@@ -58,12 +58,22 @@ const EcoHeader = () => {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="eco3d" size="xl" className="group">
+            <Button 
+              variant="eco3d" 
+              size="xl" 
+              className="group"
+              onClick={() => document.getElementById('device-logger')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Award className="w-5 h-5 group-hover:rotate-12 transition-transform" />
               Start Earning EcoPoints
             </Button>
             
-            <Button variant="glass" size="xl" className="group">
+            <Button 
+              variant="glass" 
+              size="xl" 
+              className="group"
+              onClick={() => document.getElementById('analytics-dashboard')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               <Globe className="w-5 h-5 group-hover:scale-110 transition-transform" />
               View Analytics
             </Button>

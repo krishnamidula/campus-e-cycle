@@ -10,6 +10,12 @@ const buttonVariants = cva(
     variants: {
       variant: {
         default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        eco3d: "btn-3d bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold shadow-lg hover:shadow-xl",
+        success: "bg-success text-success-foreground hover:bg-success/90",
+        warning: "bg-warning text-warning-foreground hover:bg-warning/90",
+        info: "bg-info text-info-foreground hover:bg-info/90",
+        glass: "glass-effect text-primary hover:bg-white/40",
+        glow: "glow-effect bg-primary text-primary-foreground hover:bg-primary/90",
         destructive:
           "bg-destructive text-destructive-foreground hover:bg-destructive/90",
         outline:
@@ -23,6 +29,7 @@ const buttonVariants = cva(
         default: "h-10 px-4 py-2",
         sm: "h-9 rounded-md px-3",
         lg: "h-11 rounded-md px-8",
+        xl: "h-14 rounded-lg px-10 text-base",
         icon: "h-10 w-10",
       },
     },
